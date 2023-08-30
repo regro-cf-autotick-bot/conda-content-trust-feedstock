@@ -9,7 +9,7 @@ source:
   sha256: 4a2da41a62cd6307090038fc89cdffcf4ea92cfea505cd192dfdaa9f04408195
 
 build:
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
   noarch: python
   entry_points:
@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
     - hatchling >=1.12.2
     - hatch-vcs >=0.2.0
     - wheel
   run:
-    - python >=3.5
+    - python >=3.8
     - cryptography >=41
 
 test:
