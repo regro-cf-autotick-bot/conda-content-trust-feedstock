@@ -34,9 +34,11 @@ test:
   source_files:
     - tests
   requires:
+    - pip
     - pytest
     - pytest-cov
-    - ruamel_yaml
+    - cryptography >=41.0.0
+    - securesystemslib
   commands:
     - pip check
     - pytest -v tests
