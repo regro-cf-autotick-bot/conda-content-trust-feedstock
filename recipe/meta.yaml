@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/conda/conda-content-trust/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 4a2da41a62cd6307090038fc89cdffcf4ea92cfea505cd192dfdaa9f04408195
+  sha256: ded769f69a0491bd1e002ce949a332ae5a47a60ce733adb8a724802c8fdfe02b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
