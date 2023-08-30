@@ -29,8 +29,10 @@ requirements:
 test:
   imports:
     - conda_content_trust
-    - conda_content_trust.signing
+    - conda_content_trust.authentication
+    - conda_content_trust.common
     - conda_content_trust.root_signing
+    - conda_content_trust.signing
   source_files:
     - tests
   requires:
