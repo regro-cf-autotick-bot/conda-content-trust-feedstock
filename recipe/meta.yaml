@@ -37,8 +37,7 @@ test:
     - pip
     - pytest
     - pytest-cov
-    - cryptography >=41.0.0
-    - securesystemslib
+    - securesystemslib  # extra dependency
   commands:
     - pip check
     - pytest -v tests
